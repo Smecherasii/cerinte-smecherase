@@ -1,2 +1,2 @@
 # cerinte-smecherase
-Cele mai smecherase cerinte de pe mapamond
+Cele mai smecherase cerinte de pe intreg mapamondul
