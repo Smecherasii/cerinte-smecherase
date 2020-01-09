@@ -1,12 +1,9 @@
 package smecherasii.domain;
 
-import java.util.UUID;
+import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-import org.hibernate.annotations.GenericGenerator;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,13 +15,15 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Company {
-
-    @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    private UUID id;
+public class Company extends User {
 
     private String name;
+
+    private String location;
+
+    private String description;
+
+    @OneToMany(mappedBy = "company")
+    private List<Internship> internships;
 
 }
