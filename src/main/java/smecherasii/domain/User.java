@@ -20,6 +20,7 @@ import lombok.Setter;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User extends BaseEntity {
 
+    @Column(unique = true)
     private String username;
 
     @Column(unique = true)

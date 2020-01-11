@@ -9,3 +9,13 @@ k
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ?
 Smecherasii.iml,1\e\1e28da5c05dedc216c706e7eb3e9a1d6ca224ffc
+`
+0src/main/java/smecherasii/domain/BaseEntity.java,f\9\f9921a68e9a88bee235885b4983679a818208ac5
+a
+1src/main/java/smecherasii/domain/Application.java,1\b\1b0f6d4750c1868bbb8e3e093997da6d7bf665b3
+]
+-src/main/java/smecherasii/domain/Student.java,a\e\ae612ed6a3190bf4e749ab889239aaac3d340546
+Z
+*src/main/java/smecherasii/domain/User.java,1\6\160483f708fd5c6dc859d155b095a57cbb677a36
+`
+0src/main/java/smecherasii/domain/Internship.java,3\0\30f898a2b1052dae2c2eb733a19c6f592807e7bb

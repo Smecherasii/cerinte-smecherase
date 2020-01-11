@@ -1,6 +1,9 @@
 package smecherasii.domain;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,6 +21,7 @@ public class Student extends User {
 
     private String lastName;
 
-    private String email;
+    @OneToMany(mappedBy = "student")
+    private List<Application> applications;
 
 }

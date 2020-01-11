@@ -1,9 +1,11 @@
 package smecherasii.domain;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,4 +29,8 @@ public class Internship extends BaseEntity {
     private LocalDate startDate;
 
     private LocalDate endDate;
+
+    @OneToMany(mappedBy = "internship")
+    private List<Application> applications;
+
 }

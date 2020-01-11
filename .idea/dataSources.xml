@@ -4,6 +4,8 @@
     <data-source source="LOCAL" name="smecherasii@localhost" uuid="a774b4fe-71fe-4366-9b36-71ca415793bc">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <schema-control>AUTOMATIC</schema-control>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/smecherasii</jdbc-url>
     </data-source>
