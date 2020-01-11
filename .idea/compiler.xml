@@ -11,7 +11,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Smecherasii" target="1.8" />
+      <module name="Smecherasii" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Smecherasii" options="-Amapstruct.defaultComponentModel=spring" />
+    </option>
   </component>
 </project>

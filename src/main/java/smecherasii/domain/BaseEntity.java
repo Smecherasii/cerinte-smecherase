@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @MappedSuperclass
-public abstract class BaseEntity {
+abstract class BaseEntity {
 
     @Id
     @GeneratedValue(generator = "uuid2")

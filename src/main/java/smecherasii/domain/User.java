@@ -2,9 +2,12 @@ package smecherasii.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,5 +30,9 @@ public class User extends BaseEntity {
     private String email;
 
     private String password;
+
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    private UserType userType;
 
 }
