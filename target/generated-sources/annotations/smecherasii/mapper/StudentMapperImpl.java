@@ -7,7 +7,7 @@ import smecherasii.dto.StudentDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-01-12T00:07:25+0200",
+    date = "2020-01-12T16:32:16+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 1.8.0_201 (Oracle Corporation)"
 )
 @Component
@@ -21,13 +21,33 @@ public class StudentMapperImpl implements StudentMapper {
 
         StudentDto studentDto = new StudentDto();
 
+        studentDto.setId( student.getId() );
         studentDto.setUsername( student.getUsername() );
         studentDto.setPassword( student.getPassword() );
         studentDto.setEmail( student.getEmail() );
-        studentDto.setId( student.getId() );
+        studentDto.setUserType( student.getUserType() );
         studentDto.setFirstName( student.getFirstName() );
         studentDto.setLastName( student.getLastName() );
 
         return studentDto;
+    }
+
+    @Override
+    public Student toStudent(StudentDto studentDto) {
+        if ( studentDto == null ) {
+            return null;
+        }
+
+        Student student = new Student();
+
+        student.setUserType( studentDto.getUserType() );
+        student.setId( studentDto.getId() );
+        student.setUsername( studentDto.getUsername() );
+        student.setEmail( studentDto.getEmail() );
+        student.setPassword( studentDto.getPassword() );
+        student.setFirstName( studentDto.getFirstName() );
+        student.setLastName( studentDto.getLastName() );
+
+        return student;
     }
 }

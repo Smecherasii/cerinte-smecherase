@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Login page</title>
+    <title>Internship app</title>
 </head>
 <body>
 <h1>Login page</h1>
@@ -27,6 +27,9 @@
             <button type="submit" class="btn btn-primary">Sign in</button>
         </div>
     </div>
+    <span>
+        Don't have an account?
+    <a th:href="@{/register/step1}">Click here</a></span>
     <p class="text-danger" th:text="${error}">Wrong user or password</p>
 </form>
 </body>

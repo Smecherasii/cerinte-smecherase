@@ -1,6 +1,6 @@
 package smecherasii.dto;
 
-import java.util.UUID;
+import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,8 +15,10 @@ public class StudentDto extends UserDto {
 
     public static final long serialVersionUID = 2L;
 
+    @NotNull
     private String firstName;
 
+    @NotNull
     private String lastName;
 
 }

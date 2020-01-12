@@ -10,4 +10,6 @@ public interface CompanyMapper {
 
     CompanyDto toCompanyDto(Company company);
 
+    Company toCompany(CompanyDto company);
+
 }

@@ -23,12 +23,16 @@ import lombok.Setter;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User extends BaseEntity {
 
+    @NotNull
     @Column(unique = true)
     private String username;
 
+
+    @NotNull
     @Column(unique = true)
     private String email;
 
+    @NotNull
     private String password;
 
     @NotNull

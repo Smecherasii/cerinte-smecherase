@@ -1,10 +1,13 @@
 smecherasii\exception\NotFoundException.class
 smecherasii\service\UserService.class
+smecherasii\service\StudentServiceImpl.class
+smecherasii\domain\UserType.class
 smecherasii\mapper\UserMapperImpl.class
 smecherasii\repository\UserRepository.class
 smecherasii\dto\StudentDto.class
 smecherasii\repository\CompanyRepository.class
 smecherasii\mapper\StudentMapperImpl.class
+smecherasii\repository\StudentRepository.class
 smecherasii\mapper\CompanyMapperImpl.class
 smecherasii\dto\UserDto.class
 smecherasii\domain\Internship.class
@@ -22,3 +25,4 @@ smecherasii\domain\Student.class
 smecherasii\mapper\UserMapper.class
 smecherasii\mapper\CompanyMapper.class
 smecherasii\domain\Application.class
+smecherasii\service\StudentService.class

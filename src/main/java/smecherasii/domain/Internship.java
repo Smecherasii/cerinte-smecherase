@@ -22,6 +22,8 @@ public class Internship extends BaseEntity {
     @ManyToOne(optional = false)
     private Company company;
 
+    private String name;
+
     private String domain;
 
     private double salary;

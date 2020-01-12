@@ -7,7 +7,7 @@ import smecherasii.dto.UserDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-01-12T00:15:46+0200",
+    date = "2020-01-12T16:32:16+0200",
     comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 1.8.0_201 (Oracle Corporation)"
 )
 @Component
@@ -25,6 +25,7 @@ public class UserMapperImpl implements UserMapper {
         userDto.setUsername( user.getUsername() );
         userDto.setPassword( user.getPassword() );
         userDto.setEmail( user.getEmail() );
+        userDto.setUserType( user.getUserType() );
 
         return userDto;
     }

@@ -19,7 +19,7 @@
       <ObjectId>116527</ObjectId>
       <StateNumber>4567</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>4951</IntrospectionStateNumber>
+      <IntrospectionStateNumber>5080</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
@@ -71,306 +71,330 @@
       <Comment>standard public schema</Comment>
       <StateNumber>340</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>4951</IntrospectionStateNumber>
+      <IntrospectionStateNumber>5080</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
     <table id="13" parent="12" name="application">
-      <ObjectId>117413</ObjectId>
+      <ObjectId>117671</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>4939</StateNumber>
+      <StateNumber>5072</StateNumber>
     </table>
     <table id="14" parent="12" name="company">
-      <ObjectId>117418</ObjectId>
+      <ObjectId>117676</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>4941</StateNumber>
+      <StateNumber>5074</StateNumber>
     </table>
     <table id="15" parent="12" name="internship">
-      <ObjectId>117426</ObjectId>
+      <ObjectId>117684</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>4941</StateNumber>
+      <StateNumber>5074</StateNumber>
     </table>
     <table id="16" parent="12" name="platform_user">
-      <ObjectId>117431</ObjectId>
+      <ObjectId>117692</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>4942</StateNumber>
+      <StateNumber>5075</StateNumber>
     </table>
     <table id="17" parent="12" name="student">
-      <ObjectId>117439</ObjectId>
+      <ObjectId>117700</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>4942</StateNumber>
+      <StateNumber>5075</StateNumber>
     </table>
     <column id="18" parent="13" name="id">
       <Position>1</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4931</StateNumber>
+      <StateNumber>5064</StateNumber>
       <TypeId>2950</TypeId>
     </column>
     <column id="19" parent="13" name="additional_information">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4931</StateNumber>
+      <StateNumber>5064</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="20" parent="13" name="internship_id">
       <Position>3</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4931</StateNumber>
+      <StateNumber>5064</StateNumber>
       <TypeId>2950</TypeId>
     </column>
     <column id="21" parent="13" name="student_id">
       <Position>4</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4931</StateNumber>
+      <StateNumber>5064</StateNumber>
       <TypeId>2950</TypeId>
     </column>
     <index id="22" parent="13" name="application_pkey">
-      <ObjectId>117416</ObjectId>
-      <StateNumber>4931</StateNumber>
+      <ObjectId>117674</ObjectId>
+      <StateNumber>5064</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="23" parent="13" name="application_pkey">
-      <ObjectId>117417</ObjectId>
-      <StateNumber>4931</StateNumber>
+      <ObjectId>117675</ObjectId>
+      <StateNumber>5064</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>application_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="24" parent="13" name="fkigm5jb0xdqnqjelaagm14dcva">
-      <ObjectId>117456</ObjectId>
-      <StateNumber>4939</StateNumber>
+    <foreign-key id="24" parent="13" name="fkjh0wjiaukh13wcsy9flr7wg2k">
+      <ObjectId>117712</ObjectId>
+      <StateNumber>5071</StateNumber>
+      <ColNames>internship_id</ColNames>
+      <RefTableId>117684</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>internship</RefTableName>
+      <RefKeyName>internship_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="25" parent="13" name="fkigm5jb0xdqnqjelaagm14dcva">
+      <ObjectId>117717</ObjectId>
+      <StateNumber>5072</StateNumber>
       <ColNames>student_id</ColNames>
-      <RefTableId>117439</RefTableId>
+      <RefTableId>117700</RefTableId>
       <RefColPositions>3</RefColPositions>
       <RefTableName>student</RefTableName>
       <RefKeyName>student_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="25" parent="14" name="description">
+    <column id="26" parent="14" name="description">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4932</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5065</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="26" parent="14" name="location">
+    <column id="27" parent="14" name="location">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4932</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5065</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="27" parent="14" name="name">
+    <column id="28" parent="14" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4932</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5065</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="28" parent="14" name="id">
+    <column id="29" parent="14" name="id">
       <Position>4</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4932</StateNumber>
+      <StateNumber>5065</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <index id="29" parent="14" name="company_pkey">
-      <ObjectId>117424</ObjectId>
-      <StateNumber>4932</StateNumber>
+    <index id="30" parent="14" name="company_pkey">
+      <ObjectId>117682</ObjectId>
+      <StateNumber>5065</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="30" parent="14" name="company_pkey">
-      <ObjectId>117425</ObjectId>
-      <StateNumber>4932</StateNumber>
+    <key id="31" parent="14" name="company_pkey">
+      <ObjectId>117683</ObjectId>
+      <StateNumber>5065</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>company_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="31" parent="14" name="fk5t8dog8bispq6vtgspjmtnax0">
-      <ObjectId>117461</ObjectId>
-      <StateNumber>4940</StateNumber>
+    <foreign-key id="32" parent="14" name="fk5t8dog8bispq6vtgspjmtnax0">
+      <ObjectId>117722</ObjectId>
+      <StateNumber>5073</StateNumber>
       <ColNames>id</ColNames>
-      <RefTableId>117431</RefTableId>
+      <RefTableId>117692</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>platform_user</RefTableName>
       <RefKeyName>platform_user_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="32" parent="15" name="id">
+    <column id="33" parent="15" name="id">
       <Position>1</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="33" parent="15" name="domain">
+    <column id="34" parent="15" name="domain">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="34" parent="15" name="end_date">
+    <column id="35" parent="15" name="end_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="35" parent="15" name="salary">
+    <column id="36" parent="15" name="name">
       <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>5066</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="37" parent="15" name="salary">
+      <Position>5</Position>
       <DataType>double precision|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="36" parent="15" name="start_date">
-      <Position>5</Position>
+    <column id="38" parent="15" name="start_date">
+      <Position>6</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="37" parent="15" name="company_id">
-      <Position>6</Position>
+    <column id="39" parent="15" name="company_id">
+      <Position>7</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4933</StateNumber>
+      <StateNumber>5066</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <index id="38" parent="15" name="internship_pkey">
-      <ObjectId>117429</ObjectId>
-      <StateNumber>4933</StateNumber>
+    <index id="40" parent="15" name="internship_pkey">
+      <ObjectId>117690</ObjectId>
+      <StateNumber>5066</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="39" parent="15" name="internship_pkey">
-      <ObjectId>117430</ObjectId>
-      <StateNumber>4933</StateNumber>
+    <key id="41" parent="15" name="internship_pkey">
+      <ObjectId>117691</ObjectId>
+      <StateNumber>5066</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>internship_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="40" parent="15" name="fk5m7aghwpiy1nsiwudjowy0lhb">
-      <ObjectId>117466</ObjectId>
-      <StateNumber>4941</StateNumber>
+    <foreign-key id="42" parent="15" name="fk5m7aghwpiy1nsiwudjowy0lhb">
+      <ObjectId>117727</ObjectId>
+      <StateNumber>5074</StateNumber>
       <ColNames>company_id</ColNames>
-      <RefTableId>117418</RefTableId>
+      <RefTableId>117676</RefTableId>
       <RefColPositions>4</RefColPositions>
       <RefTableName>company</RefTableName>
       <RefKeyName>company_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="41" parent="16" name="id">
+    <column id="43" parent="16" name="id">
       <Position>1</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4934</StateNumber>
+      <StateNumber>5067</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="42" parent="16" name="email">
+    <column id="44" parent="16" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4934</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5067</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="16" name="password">
+    <column id="45" parent="16" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4934</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5067</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="44" parent="16" name="user_type">
+    <column id="46" parent="16" name="user_type">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4934</StateNumber>
+      <StateNumber>5067</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="16" name="username">
+    <column id="47" parent="16" name="username">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4934</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5067</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="46" parent="16" name="platform_user_pkey">
-      <ObjectId>117437</ObjectId>
-      <StateNumber>4934</StateNumber>
+    <index id="48" parent="16" name="platform_user_pkey">
+      <ObjectId>117698</ObjectId>
+      <StateNumber>5067</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="47" parent="16" name="uk_rxsdcpvkgpth0kx9av8qnv26y">
-      <ObjectId>117447</ObjectId>
-      <StateNumber>4936</StateNumber>
+    <index id="49" parent="16" name="uk_rxsdcpvkgpth0kx9av8qnv26y">
+      <ObjectId>117708</ObjectId>
+      <StateNumber>5069</StateNumber>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="48" parent="16" name="uk_dvu76e8kc66ucv9xqo9e79b1o">
-      <ObjectId>117449</ObjectId>
-      <StateNumber>4937</StateNumber>
+    <index id="50" parent="16" name="uk_dvu76e8kc66ucv9xqo9e79b1o">
+      <ObjectId>117710</ObjectId>
+      <StateNumber>5070</StateNumber>
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="49" parent="16" name="platform_user_pkey">
-      <ObjectId>117438</ObjectId>
-      <StateNumber>4934</StateNumber>
+    <key id="51" parent="16" name="platform_user_pkey">
+      <ObjectId>117699</ObjectId>
+      <StateNumber>5067</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>platform_user_pkey</UnderlyingIndexName>
     </key>
-    <key id="50" parent="16" name="uk_rxsdcpvkgpth0kx9av8qnv26y">
-      <ObjectId>117448</ObjectId>
-      <StateNumber>4936</StateNumber>
+    <key id="52" parent="16" name="uk_rxsdcpvkgpth0kx9av8qnv26y">
+      <ObjectId>117709</ObjectId>
+      <StateNumber>5069</StateNumber>
       <ColNames>email</ColNames>
       <UnderlyingIndexName>uk_rxsdcpvkgpth0kx9av8qnv26y</UnderlyingIndexName>
     </key>
-    <key id="51" parent="16" name="uk_dvu76e8kc66ucv9xqo9e79b1o">
-      <ObjectId>117450</ObjectId>
-      <StateNumber>4937</StateNumber>
+    <key id="53" parent="16" name="uk_dvu76e8kc66ucv9xqo9e79b1o">
+      <ObjectId>117711</ObjectId>
+      <StateNumber>5070</StateNumber>
       <ColNames>username</ColNames>
       <UnderlyingIndexName>uk_dvu76e8kc66ucv9xqo9e79b1o</UnderlyingIndexName>
     </key>
-    <column id="52" parent="17" name="first_name">
+    <column id="54" parent="17" name="first_name">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4935</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5068</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="53" parent="17" name="last_name">
+    <column id="55" parent="17" name="last_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>4935</StateNumber>
+      <NotNull>1</NotNull>
+      <StateNumber>5068</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="17" name="id">
+    <column id="56" parent="17" name="id">
       <Position>3</Position>
       <DataType>uuid|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>4935</StateNumber>
+      <StateNumber>5068</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <index id="55" parent="17" name="student_pkey">
-      <ObjectId>117445</ObjectId>
-      <StateNumber>4935</StateNumber>
+    <index id="57" parent="17" name="student_pkey">
+      <ObjectId>117706</ObjectId>
+      <StateNumber>5068</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="56" parent="17" name="student_pkey">
-      <ObjectId>117446</ObjectId>
-      <StateNumber>4935</StateNumber>
+    <key id="58" parent="17" name="student_pkey">
+      <ObjectId>117707</ObjectId>
+      <StateNumber>5068</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="57" parent="17" name="fksddyvaae45tfcvnad1791j0wq">
-      <ObjectId>117471</ObjectId>
-      <StateNumber>4942</StateNumber>
+    <foreign-key id="59" parent="17" name="fksddyvaae45tfcvnad1791j0wq">
+      <ObjectId>117732</ObjectId>
+      <StateNumber>5075</StateNumber>
       <ColNames>id</ColNames>
-      <RefTableId>117431</RefTableId>
+      <RefTableId>117692</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>platform_user</RefTableName>
       <RefKeyName>platform_user_pkey</RefKeyName>

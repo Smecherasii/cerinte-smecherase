@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="registerStudent">
+<title>Student</title>
+<head>
+    <meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<body>
+<form th:action="@{/register/student}" method="post" th:object="${studentDto}">
+    <input type="hidden" name="userType" th:value="${T(smecherasii.domain.UserType).STUDENT}">
+    <div class="form-group row">
+        <label for="username" class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="username" placeholder="Username" th:field="*{username}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="password" placeholder="Password" th:field="*{password}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="email" placeholder="Email" th:field="*{email}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="firstname" class="col-sm-2 col-form-label">Firstname</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="firstname" placeholder="Firstname" th:field="*{firstName}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="lastname" class="col-sm-2 col-form-label">Lastname</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname" placeholder="Lastname" th:field="*{lastName}">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+    </div>
+    <p class="text-danger" th:text="${error}">Wrong user or password</p>
+</form>
+</body>
+</html>
