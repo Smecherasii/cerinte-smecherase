@@ -5,22 +5,29 @@
     <title>Internships</title>
 </head>
 <body>
-<h2 style="text-align: center;">All Internships</h2>
+<h1 style="text-align: center;">All Internships</h1>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <hr>
+<div class="container col-xs-6" style="float:inherit;">
+<div class="panel-group" th:each="internship : *{internships}" >
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="list-group-item-heading" th:text="${internship.name}"></h3>
+        </div>
 
-<div th:each="internship : *{internships}">
-    <h3 th:text="${internship.name}"></h3>
-    <p th:text="${internship.domain}"> </p>
-    <p th:text="${internship.company.name}"></p>
-    <p th:text="${internship.salary}"></p>
-    <p th:text="${internship.startDate}"></p>
-    <p th:text="${internship.endDate}"></p>
+        <div class="panel-content">
+            <p th:text="${internship.domain}"> </p>
+            <p th:text="${internship.company.name}"></p>
+            <p th:text="${internship.salary}"></p>
+            <p th:text="${internship.startDate}"></p>
+            <p th:text="${internship.endDate}"></p>
+        </div>
+    </div>
     <hr>
 </div>
-
+</div>
 </body>
 </html>
