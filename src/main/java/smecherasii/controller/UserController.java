@@ -10,14 +10,19 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import smecherasii.domain.Internship;
 import smecherasii.dto.CompanyDto;
+import smecherasii.dto.InternshipDto;
 import smecherasii.dto.StudentDto;
 import smecherasii.dto.UserDto;
 import smecherasii.exception.InvalidDataException;
 import smecherasii.exception.NotFoundException;
 import smecherasii.service.CompanyService;
+import smecherasii.service.InternshipService;
 import smecherasii.service.StudentService;
 import smecherasii.service.UserService;
+
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -28,11 +33,14 @@ public class UserController {
 
     private final CompanyService companyService;
 
+    private final InternshipService internshipService;
+
     public UserController(UserService userService, StudentService studentService,
-                          CompanyService companyService) {
+                          CompanyService companyService, InternshipService internshipService) {
         this.userService = userService;
         this.studentService = studentService;
         this.companyService = companyService;
+        this.internshipService = internshipService;
     }
 
     @GetMapping("/login")
@@ -108,6 +116,16 @@ public class UserController {
 
             return modelAndView;
         }
+    }
+
+    @GetMapping("/listInternships")
+    public ModelAndView listInternships( @ModelAttribute InternshipDto internshipDto){
+        ModelAndView modelAndView = new ModelAndView("listInternships.html");
+
+        List<Internship> list =  internshipService.getInternships(internshipDto);
+        modelAndView.addObject("internships", list );
+
+        return  modelAndView;
     }
 
 }
