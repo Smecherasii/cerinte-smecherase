@@ -10,4 +10,5 @@ import java.util.List;
  */
 public interface InternshipService {
     List<Internship> getInternships(InternshipDto internshipDto);
+    void addInternship(InternshipDto internshipDto);
 }
