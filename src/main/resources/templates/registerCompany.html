@@ -8,6 +8,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <body>
+<h1 style="text-align: center">Comapny Register</h1>
+<hr>
+<div class="container col-xs-6" style="float:inherit;">
 <form th:action="@{/register/company}" method="post" th:object="${companyDto}">
     <input type="hidden" name="userType" th:value="${T(smecherasii.domain.UserType).COMPANY}">
     <div class="form-group row">
@@ -53,5 +56,6 @@
     </div>
     <p class="text-danger" th:text="${error}">Wrong user or password</p>
 </form>
+</div>
 </body>
 </html>

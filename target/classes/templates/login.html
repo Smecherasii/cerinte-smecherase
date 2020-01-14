@@ -4,11 +4,12 @@
     <title>Internship app</title>
 </head>
 <body>
-<h1>Login page</h1>
+<h1 style="text-align: center;">Login page</h1>
+<hr>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<div class="container col-xs-6" style="float:inherit;">
 <form th:action="@{/login}" method="post" th:object="${userDto}">
     <div class="form-group row">
         <label for="username" class="col-sm-2 col-form-label">Email</label>
@@ -32,5 +33,6 @@
     <a th:href="@{/register/step1}">Click here</a></span>
     <p class="text-danger" th:text="${error}">Wrong user or password</p>
 </form>
+</div>
 </body>
 </html>
