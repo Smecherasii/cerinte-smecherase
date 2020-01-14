@@ -7,8 +7,8 @@ import smecherasii.dto.CompanyDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2020-01-12T16:32:16+0200",
-    comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 1.8.0_201 (Oracle Corporation)"
+    date = "2020-01-14T11:15:39+0200",
+    comments = "version: 1.3.0.Beta2, compiler: javac, environment: Java 1.8.0_232 (AdoptOpenJDK)"
 )
 @Component
 public class CompanyMapperImpl implements CompanyMapper {

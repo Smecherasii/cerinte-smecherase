@@ -1,25 +1,28 @@
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\controller\UserController.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\service\UserService.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\BaseEntity.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\exception\ErrorCode.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\Student.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\dto\CompanyDto.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\repository\UserRepository.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\Company.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\UserType.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\Application.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\SmecherProject.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\repository\StudentRepository.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\dto\StudentDto.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\exception\SmecherasiiException.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\repository\CompanyRepository.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\exception\NotFoundException.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\User.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\service\StudentService.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\domain\Internship.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\dto\UserDto.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\service\StudentServiceImpl.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\mapper\StudentMapper.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\mapper\UserMapper.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\service\UserServiceImpl.java
-F:\Faculta\Master - An1\ReqEng\PrSmchr3\cerinte-smecherase\src\main\java\smecherasii\mapper\CompanyMapper.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/repository/UserRepository.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/UserServiceImpl.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/Internship.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/exception/SmecherasiiException.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/exception/NotFoundException.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/UserService.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/dto/UserDto.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/mapper/CompanyMapper.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/CompanyServiceImpl.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/UserType.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/StudentServiceImpl.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/dto/CompanyDto.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/exception/ErrorCode.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/mapper/UserMapper.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/repository/CompanyRepository.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/exception/InvalidDataException.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/dto/StudentDto.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/Application.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/CompanyService.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/Student.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/BaseEntity.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/controller/UserController.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/User.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/repository/StudentRepository.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/service/StudentService.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/mapper/StudentMapper.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/domain/Company.java
+/Users/cristianbutiri/Documents/Personal/cerinte-smecherase/src/main/java/smecherasii/SmecherProject.java
